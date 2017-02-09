@@ -11,14 +11,42 @@
   </head>
   <body>
     <div class="title">
-      <h1>ASSIGNMENT 01 - PIE & DONUT CHARTS</h1>
-           <img class="bioImage" src="../img/image1.jpg">
+      <h1>Assignment 01 - Scatterplot / Connected Scatterplot </h1>
     </div>
-    <div class="bio">
       <h2>Description</h2>
-      <p class="bioText">This is the text for the chart, with multiple links... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent posuere ante quam, nec blandit ex tristique sed. Vivamus neque ex, imperdiet eget urna vel, volutpat consectetur leo. Nulla nunc sem, consectetur ac fermentum in, euismod vel tortor. Suspendisse congue purus quis nunc sodales laoreet. Nulla sed tristique tellus. Curabitur at sollicitudin mi, eu pellentesque arcu. In at orci libero. Quisque interdum, ipsum eget placerat eleifend, massa diam pellentesque orci, ac suscipit eros sem id erat. Nunc iaculis nibh id nulla sodales egestas. Duis ultrices aliquam neque ut luctus. Fusce condimentum dictum scelerisque. Cras eu fringilla ligula.<br><br>Proin interdum lorem tincidunt aliquet placerat. Maecenas aliquam venenatis erat. Integer tempus odio varius nunc egestas, id imperdiet lectus auctor. Morbi non varius mi, ut pulvinar odio. Nam nec dolor massa. Nunc a molestie ligula. Nullam imperdiet vestibulum felis in consequat. Aliquam felis turpis, bibendum vel mollis ut, bibendum ut libero. Maecenas ultricies molestie lectus, in congue nibh pellentesque sit amet. Mauris at diam feugiat, sodales purus id, mollis felis. Fusce sodales purus et dolor condimentum viverra. Curabitur fringilla leo consequat est sagittis, sit amet maximus nisi volutpat. Morbi quis nulla pharetra, volutpat turpis nec, scelerisque mauris. Quisque porta elit vel eros dictum condimentum. In imperdiet in velit id cursus. Sed pretium ultrices velit.</p>
-      <h2>Examples</h2>
-      <img class="bioImage" src="../img/jfs_image.jpeg">
+      <p align="justify"> A scatterplot is a type of graph that allows you to visualize in a very simple way the relationship between two variables for a set of data. Typically, these variables are quantitative but one can also use one quantitative and one qualitative, or either both of them qualitative. In this type of graph the data is displayed as a collection of dots or small circles in two axes, x and y. Each of the axes represent the range of values of each of the variables, and the dots represent a single data point from the data.  
+
+      One of the advantages of this type of graph is that it allows you to see patterns or covariation between variables. If the dots are sufficiently cluster together, one can be able to discern trends in the data, for instance, linear or non-linear relationships. One of the disadvantages is that as the size of the data become larger, points could start to overplot and thus the scatterplot becomes less useful. In other words, many points in the same location will difficult to see the distribution. </p>
+     </div>
+      <h2>History</h2>
+      <p align="justify"> Apparently, there is no one widely credited for the invention of this type of graph. During the 1830s, Astronomer John Frederick Hershel was the first to use it as a way to measure the orbits of a twin star. Three decades later, on his work on correlation and regression, Francis Galton used it to understand bivariate relationships between random variables (in particular height and weight of parents and sons).
+
+      <h2>Standard scatterplot</h2>
+      <p align="justify"> The scatterplot below shows the relationship between height, in the x-axis, and weight, in the y-axis. In general, it seems to be a positive relationship between these variables: as the height of a person increases so does the weight. 
+       </div>
+      <img class="bioImage" src="../img/height.png">
+      <h2>More advanced scatterplots</h2>
+      <p align="justify"> The easiest way to do a scatterplot is using Excel. However, some statistical softwares such as Stata or R offer more leeway to play with these graphs. For instance, in R one can use the mapping aesthetics to add a third variable to a two dimensional classic scatterplot. In this case, the aesthetics include things like size, shape, or color of the points. Hence, one can display a single or various dots by changing the values of the aesthetic properties.
+             </div>
+      <img class="bioImage" src="../img/class.png">
+      <p align="justify"> The scatterplot above visualizes the relationship between engine size (displ) mapped to the x axis, and fuel economy mapped (cty) to the y axis. The graph adds a third variable named class, which gives each of the dots a unique color according to its class of car. We can see that midsize and compact cars have a better gas mileage than large engine cars like SUVs and pickup trucks.
+      </div>
+      <h2>Interactive scatterplots</h2>
+      <p align="justify"> This scatterplot taken from the <a href="https://www.nytimes.com/interactive/2016/04/29/upshot/money-race-and-success-how-your-school-district-compares.html"> New York Times</a> shows the relationship between parent's socioeconomic status and children academic success by school district in the US. The x-axis deploys a socioeconomic score from poorer to richer, while the y-axis represents the average grade level of the children belonging to each school district, ranging from "3 grades behind" to "3 grades ahead of average" (not shown in the picture). Interestingly, the graph incorporates the racial composition of each school district as a third variable, which permits to visualize the racial achievements gaps, if any, between the hite, hispanic, and black population. In this case, the color of each dot represents a race and the size of the dot represents the population size of that particular race.
+       </div>
+            <center> <img class="custom-style" src="../img/parents.png" width="700" height="360" align="middle">
+            </center>
+            </div>
+        <p align="justify"> The scatterplot below taken from <a href="http://polygraph.cool/redraft/"> Polygraph</a> visualizes NBA picks since 1989 (x-axis) with an expected rank of each pick —also called redraft— based on his final career performance (y-axis). What we observe is that many players are over and under-valued across years. In fact, a successful” NBA career can come from anywhere in the draft. 
+        <center> <img class="custom-style" src="../img/nba.png" width="700" height="360" align="middle">
+            </center>
+       </div>
+      </div>
+     <h2>Connected scatterplots</h2>
+      <p align="justify"> The scatterplot from the NYT can also be interpreted as a connected scatterplot. This is a type of scatterplot where the dots connect through lines. In many cases, such as in time-series analysis, the lines connect consecutive points, allowing to see temporary connections. However, the lines can also connect points that are related in another sense. In this particular graph, given that the dots are classified by race, each dot is connected with the academic achievement of the other two races. This allows to have an estimate of how large or small is the academic gap between children from a particular race and their other classmates given their socioeconomic status. As it can be seen, the largest gaps between white children and their minority classmates emerge in some of the wealthiest communities.
+                </div>
+            <center> <img class="custom-style" src="../img/parents2.png" width="700" height="360">
+            </center>
       <p class="bioText"><a href="../index.html">Take me back home...</a></p>
     </div>
   </body>
